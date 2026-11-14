@@ -6,10 +6,6 @@ troca os textos e as fotos pelo navegador.
 
 ![O site do template rolando no computador e no celular, terminando no tema escuro](docs/images/site-preview.webp)
 
-Veja o site funcionando, com as animações e o tema escuro (26 segundos):
-
-https://github.com/user-attachments/assets/74839262-7107-444c-9e00-9b0d4a717b29
-
 ## O que vem pronto
 
 - **Quatro páginas:** início, sobre (seu currículo), projetos e contato.
