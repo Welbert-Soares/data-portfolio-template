@@ -34,13 +34,18 @@ na Vercel, fora do código. Para adicionar uma:
 > **Environments** parecido, mas as variáveis do site não ficam lá.
 
 1. Entre em [vercel.com](https://vercel.com), clique no nome do seu projeto e, no menu da
-   esquerda, em **Environment Variables**:
+   esquerda, em **Environment Variables**.
+2. Clique em **Add Environment Variable**, no canto superior direito:
 
-   ![Painel do projeto na Vercel com o item Environment Variables do menu destacado](../images/11-vercel-painel.png)
+   ![Tela Environment Variables da Vercel com o botão Add Environment Variable e a opção System Environment Variables destacados](../images/12-vercel-variaveis.png)
 
-2. Em **Key**, escreva o nome da variável, e em **Value**, o valor. Clique em **Save**.
-3. As variáveis só valem a partir do próximo deploy. No menu da esquerda, clique em
+3. Em **Key**, escreva o nome da variável, e em **Value**, o valor. Clique em **Save**.
+4. As variáveis só valem a partir do próximo deploy. No menu da esquerda, clique em
    **Deployments**, depois nos três pontinhos (**⋯**) da primeira linha e em **Redeploy**.
+
+> **Não desmarque "Enable access to System Environment Variables"**, no fim da página. Ela já
+> vem marcada, e é por ela que o site descobre o próprio endereço: sem ela, a prévia do link no
+> LinkedIn e o Google passam a apontar para um endereço errado.
 
 ## Formulário de contato
 
