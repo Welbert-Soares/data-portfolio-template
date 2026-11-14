@@ -1,0 +1,50 @@
+@import 'tailwindcss';
+
+/* Cores do site. A cor principal NÃO se troca aqui: escolha em `color` no personal.ts. Os tons
+   (--p-*) vêm de src/lib/theme.ts e são aplicados no <html> por layout.tsx.
+   - primary: textos em destaque e detalhes (700 no tema claro, 400 no escuro, para ter contraste)
+   - primary-strong / primary-stronger: fundo dos botões com texto branco e o hover deles */
+@theme {
+  --color-primary: var(--p-700);
+  --color-primary-strong: var(--p-700);
+  --color-primary-stronger: var(--p-800);
+  --color-secondary: #6b7280;
+  --color-dark: #1f2937;
+}
+
+/* Fora de @layer: vence o valor de @theme no tema escuro. */
+.dark {
+  --color-primary: var(--p-400);
+}
+
+/* Geist, carregada por next/font em layout.tsx. As variáveis --font-geist-* ficam no <body>; com
+   `inline`, as classes usam var(--font-geist-*) direto no elemento. */
+@theme inline {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+/* Tema escuro pela classe `dark` no <html> (aplicada pelo script em layout.tsx). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-5 py-2.5 font-medium transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary;
+  }
+
+  .btn-primary {
+    @apply bg-primary-strong text-white hover:bg-primary-stronger;
+  }
+
+  .btn-outline {
+    @apply border border-gray-300 hover:border-primary hover:text-primary dark:border-gray-700;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold tracking-tight md:text-4xl;
+  }
+}
