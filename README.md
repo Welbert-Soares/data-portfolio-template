@@ -4,7 +4,7 @@ Um portfólio pronto para quem trabalha (ou quer trabalhar) com dados: analistas
 cientistas de dados. **Você não precisa saber programar.** O site vai ao ar com um clique e você
 troca os textos e as fotos pelo navegador.
 
-![O site do template no computador e no celular](docs/images/site-preview.png)
+![O site do template rolando no computador e no celular, terminando no tema escuro](docs/images/site-preview.webp)
 
 Veja o site funcionando, com as animações e o tema escuro (26 segundos):
 
