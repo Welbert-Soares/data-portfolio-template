@@ -96,14 +96,22 @@ Os primeiros dados aparecem no Google Analytics em até 24 horas.
 ## Trocar o endereço .vercel.app
 
 Quer `maria-silva.vercel.app` em vez do endereço que a Vercel escolheu? No seu projeto **na
-Vercel** (não no GitHub), clique em **Domains** no menu da esquerda e edite o endereço
-`.vercel.app` que aparece na lista. Se o novo nome estiver livre, a troca é imediata.
+Vercel** (não no GitHub), clique em **Domains** no menu da esquerda:
+
+![Tela Domains da Vercel com o endereço do site, o botão Edit e o botão Add Existing numerados](../images/13-vercel-dominios.png)
+
+1. O endereço atual do seu site. **Valid Configuration** quer dizer que está tudo certo.
+2. **Edit**: clique, escreva o novo nome antes de `.vercel.app` e salve. Se o nome estiver livre,
+   a troca é imediata.
+3. **Add Existing**: para usar um domínio que você já comprou (veja abaixo).
 
 ## Domínio próprio
 
 Comprou um domínio, como `SEU-DOMINIO.com.br` (no Registro.br, por exemplo)?
 
-1. No seu projeto na Vercel, clique em **Domains** no menu da esquerda e adicione o domínio.
+1. No seu projeto na Vercel, clique em **Domains** no menu da esquerda, depois em **Add
+   Existing**, e escreva o domínio. (O botão **Buy**, ao lado, compra um domínio pela própria
+   Vercel, se você ainda não tiver um.)
 2. A Vercel mostra os registros de DNS que você precisa criar onde comprou o domínio. Siga as
    instruções da tela; a confirmação pode levar algumas horas.
 3. No `personal.ts`, escreva o domínio em `siteUrl`: `siteUrl: 'https://www.SEU-DOMINIO.com.br',`.
